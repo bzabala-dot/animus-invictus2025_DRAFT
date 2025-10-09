@@ -1,8 +1,24 @@
-body{
+@font-face {
+    font-family: Moonscape;
+    src: url("../fonts/Moonscape\ Demo.otf")
+}
+
+
+body {
     overflow-x: hidden;
     margin: auto;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 1px 1px 8px grey;
+}
 
 .jersey {
     position: relative;
@@ -55,3 +71,33 @@ body{
     background-image: url('../images/jersey.png');
     opacity:1;
 }
+
+.open {
+    width: 100%;
+    height: auto;
+}
+
+#first, #second {
+    position: relative;
+    font-family:'Moonscape', Times, serif;
+    letter-spacing: 3px;
+    font-size: 90px;
+}
+
+#first {
+    bottom: 530px;
+    left: 570px;
+    font-weight: bolder;
+}
+
+#second{
+    bottom: 560px;
+    left: 900px;
+    font-weight: lighter;
+}
+
+.open img {
+    width: 640px;
+    height: auto;
+}
+
